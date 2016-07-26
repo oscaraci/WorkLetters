@@ -1,62 +1,69 @@
-<!DOCTYPE html>
-<!-- HTML5 Hello world by kirupa - http://www.kirupa.com/html5/getting_your_feet_wet_html5_pg1.htm -->
-<html lang="en-us">
+<html>
+  <head>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400;300' rel='stylesheet' type='text/css'>
+    <link href='style.css' rel='stylesheet'>
 
-<head>
-<meta charset="utf-8">
-<title>Hello...</title>
-<style type="text/css">
-#mainContent {
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: xx-large;
-	font-weight: bold;
-	background-color: #E3F0FB;
-	border-radius: 4px;
-	padding: 10px;
-	text-align: center;
-}
-.buttonStyle {
-	border-radius: 4px;
-	border: thin solid #F0E020;
-	padding: 5px;
-	background-color: #F8F094;
-	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-	font-weight: bold;
-	color: #663300;
-	width: 75px;
-}
+  </head>
+  <body>
 
-.buttonStyle:hover {
-	border: thin solid #FFCC00;
-	background-color: #FCF9D6;
-	color: #996633;
-	cursor: pointer;
-}
-.buttonStyle:active {
-	border: thin solid #99CC00;
-	background-color: #F5FFD2;
-	color: #669900;
-	cursor: pointer;
-}
+    <div class="menu">
+      
+      <!-- Menu icon -->
+      <div class="icon-close">
+        <img src="http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/uber/close.png">
+      </div>
 
-</style>
-</head>
+      <!-- Menu -->
+      <ul>
+        <li><a href="/angular">Sign In</a></li>
+        <li><p style="margin: 1em 0 1em 0; padding: 1em 0 0 0;">
+            <a href="#" class="btn btn-apply">REQUEST FREE EARLY ACCESS</a>
+          </p><div class="campaign-contact hidden">
+            <p class="contact-success hidden" style="color: #ffffff;">
+              <strong>Thank you! We'll be in touch within 24 hours!</strong>
+            </p>
 
-<body>
-<div id="mainContent">
-<p id="helloText">?</p>
-<button id="clickButton" class="buttonStyle">click me</button>
-</div>
-<script> 
-var myButton = document.getElementById("clickButton");
-var myText = document.getElementById("helloText");
+            <form class="campaign-form">
+              <div class="form-group">
+                <input type="text" class="form-control" name="name" placeholder="Your Name">
+              </div>
 
-myButton.addEventListener('click', doSomething, false)
+              <div class="form-group">
+                <input type="email" class="form-control" name="email_address" placeholder="Your Email">
+              </div>
 
-function doSomething() {
-	myText.textContent = "hello, world!";
-}
-</script>
+              <div class="form-group">
+                <input type="text" class="form-control" name="phone_number" placeholder="Your Phone (Optional)">
+              </div>
 
-</body>
-</html>
+              <div class="form-group">
+                <input type="text" class="form-control" name="company" placeholder="Your Organization's Name">
+              </div>
+
+              <div class="form-group">
+                <input type="submit" class="btn btn-apply-small btn-block" style="background-color: #ffffff; border-color: #ff6600; color: #ff6600;" value="APPLY">
+              </div>
+            </form>
+          </div></il>
+      </ul>
+    </div>
+
+    <!-- Main body -->
+    <div class="jumbotron">
+
+      <div class="icon-menu">
+        <i class="fa fa-bars"></i>
+        Menu
+      </div>
+      <h1><img src="http://wl2.herokuapp.com/logo.png" align="left" style="width:200px;height:50px;"><h1>
+        </br>
+      <h2 style="font-family: Merriweather; color: #ffffff; font-size: 2.5em;">We take care of your employee performance notes.</h2>
+      <p style="color: #ffffff; font-size: 120%; line-height: 175%;">WorkLetters is a smart service that creates the performance reviews for your team, based on quick email notes from managers and teammates over time.</p>
+    <div class="col-md-5">
+      <img alt="Personal Assistant" class="img-responsive" src="http://simpleicon.com/wp-content/uploads/mail-1.png"></div>
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+          </html>
